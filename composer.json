@@ -1,0 +1,33 @@
+{
+    "name": "webnitros/app",
+    "license": "MIT",
+    "version": "1.1.2",
+    "authors": [
+        {
+            "name": "webnitros",
+            "email": "info@bustep.ru"
+        }
+    ],
+    "scripts": {
+        "tests" : "phpunit --bootstrap bootstrap.php"
+    },
+    "keywords": [
+        "client"
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "guzzlehttp/guzzle": "~6.5.5",
+        "monolog/monolog": "2.2"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "phpunit/phpunit": "9.*",
+        "mockery/mockery": "^1.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "App\\Tests\\": "tests/"
+        }
+    }
+}
