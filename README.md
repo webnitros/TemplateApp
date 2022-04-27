@@ -2,7 +2,6 @@
 
 Заготовка для создания пакетов для composer
 
-
 ### Настройка папок
 
 В phpStorm настроить "Directories" для папок
@@ -11,6 +10,7 @@
 src = App\
 tests = App\Tests\
 ```
+
 ## Подключения в composer.json
 
 ```json
@@ -26,3 +26,7 @@ tests = App\Tests\
   }
 }
 ```
+
+# phpunit
+
+Переменные для env задаются в файле phpunit.xml
