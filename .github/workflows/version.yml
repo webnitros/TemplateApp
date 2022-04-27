@@ -1,4 +1,4 @@
-name: Workflow1
+name: VersionUp
 on: push
 jobs:
   build:
