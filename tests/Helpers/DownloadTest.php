@@ -13,6 +13,11 @@ use App\Tests\TestCase;
 
 class DownloadTest extends TestCase
 {
+    public function testGetEnv()
+    {
+        self::assertEquals('testing', getenv('ENV'));
+    }
+
     public function testGet()
     {
 
