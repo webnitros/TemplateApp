@@ -6,7 +6,7 @@
  * Time: 22:49
  */
 
-namespace App\Tests;
+namespace Tests;
 
 use Mockery\Adapter\Phpunit\MockeryTestCase;
 
