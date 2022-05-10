@@ -21,7 +21,7 @@ gh release create "v0.0.8" --generate-notes
 
 ```http request
 src = App\
-tests = App\Tests\
+tests = Tests\
 ```
 
 ## Подключения в composer.json
