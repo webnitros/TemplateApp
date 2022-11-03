@@ -6,6 +6,29 @@
  * User: webnitros
  * Date: 25.04.2022
  * Time: 11:51
+ *
+ * // Скачиваем
+ * $Download = new Download();
+ *
+ * $files = [
+ * 'source' => '',
+ * 'target' => '',
+ * ];
+ *
+ * foreach ($files as $item) {
+ * $Download->addFile($item['source'], $item['source']);
+ * }
+ *
+ * $results = null;
+ * // Скачивание целой директории
+ * if ($files = $Download->getFiles()) {
+ * // Разрешаем выкачивать по 20 файлов одновременно
+ * $limit = 20;
+ * $files = $Download->splitArray($files);
+ * foreach ($files as $array) {
+ * $results = $Download->aSyncRequest($array, true, $limit);
+ * }
+ * }
  */
 
 namespace App\Helpers;

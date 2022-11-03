@@ -6,10 +6,10 @@
  * Time: 11:53
  */
 
-namespace App\Tests\Helpers;
+namespace Tests\Helpers;
 
 use App\Helpers\Download;
-use App\Tests\TestCase;
+use Tests\TestCase;
 
 class DownloadTest extends TestCase
 {
@@ -18,32 +18,4 @@ class DownloadTest extends TestCase
         self::assertEquals('testing', getenv('ENV'));
     }
 
-    public function testGet()
-    {
-
-        // Скачиваем
-        $Download = new Download();
-
-        $files = [
-            'source' => '',
-            'target' => '',
-        ];
-
-        foreach ($files as $item) {
-            $Download->addFile($item['source'], $item['source']);
-        }
-
-        $results = null;
-        // Скачивание целой директории
-        if ($files = $Download->getFiles()) {
-            // Разрешаем выкачивать по 20 файлов одновременно
-            $limit = 20;
-            $files = $Download->splitArray($files);
-            foreach ($files as $array) {
-                $results = $Download->aSyncRequest($array, true, $limit);
-            }
-        }
-
-
-    }
 }
