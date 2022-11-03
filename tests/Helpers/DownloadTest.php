@@ -8,7 +8,6 @@
 
 namespace Tests\Helpers;
 
-use App\Helpers\Download;
 use Tests\TestCase;
 
 class DownloadTest extends TestCase
