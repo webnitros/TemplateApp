@@ -198,7 +198,7 @@ final class RequestClient extends Client
      * Вернет массив ответа или null если не удалось разорабрать ответ
      * @return array|null
      */
-    public function getArray()
+    public function toArray()
     {
         $body = $this->getBody();
         if (!$body) {
